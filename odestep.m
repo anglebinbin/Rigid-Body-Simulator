@@ -9,7 +9,7 @@ if strcmp(solver, 'euler')
     x2 = x1 + h * feval(f, x1, fparams);    
 else
     if strcmp(solver, 'imp_euler')
-        x2 = x1 + h / 2 * ( feval(f, x1, fparams) + feval(f, h * feval(f, x1, fparams), fparams));
+        x2 = x1 + h / 2 * ( feval(f, x1, fparams) + feval(f, x1 + h * feval(f, x1, fparams), fparams));
     else
         if strcmp(solver, 'rk4')
             k1 = h * feval(f, x1, fparams);
