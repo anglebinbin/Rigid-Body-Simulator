@@ -1,7 +1,7 @@
 % set up the parameters
-h       = 0.1;           % time step
+h       = 0.001;        % time step
 x0      = [pi/2, 0]';   % initial state
-nsteps  = 200;          % number of steps
+nsteps  = round(20/h);  % number of steps
 len     = 5;            % length of the rod
 g       = 9.8;          % gravitational constant
 m       = 1;            % mass of the particle
@@ -44,6 +44,6 @@ for i = 1:nsteps-1
     hold off
     
     % update the state & energies
-    X(:,i+1) = odestep(X(:,i),@pend,h,'imp_euler',params);
+    X(:,i+1) = odestep(X(:,i),@pend,h,'euler',params);
     
 end
