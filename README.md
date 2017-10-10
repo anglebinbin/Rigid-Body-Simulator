@@ -1,8 +1,8 @@
 # Rigid-Body-Simulator
-This is a simple rigid body simulator, an assignment for the course 3D Modeling and Simulation in UMass Amherst.
+This is a simple rigid body simulator, an assignment for the course 3D Modeling and Simulation at UMass Amherst.
 
 ## Part 1: Plane Pendulum
-We use a plane pendulum model to implement 3 basic integration methods: Euler's Method, Improved Euler's Method and Runge-Kutte Integation Method.
+We use a plane pendulum model to implement 3 basic integration methods: Euler's Method, Improved Euler's Method and Runge-Kutte Integration Method.
 From the animation and the plot, we can compare the performance of these 3 methods.
 
 ## Part 2: Simple Rigid Body Simulator
